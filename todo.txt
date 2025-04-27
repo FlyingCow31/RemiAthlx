@@ -13,3 +13,4 @@ Design simple noir/Titres jaunes + texte blanc Icones en blanc
 
 > Copyright the file
 > Responsive design
+> Animations

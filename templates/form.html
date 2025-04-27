@@ -4,6 +4,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Rémi Derrien | Form</title>
+     
 </head>
 <body>
      <section>
@@ -12,22 +13,22 @@
 
           <form action="" method="POST">
                <label for="name">Nom:</label>
-               <input type="text" id="name" name="name" required>
+               <input type="text" id="name" name="name" required> <br>
 
                <label for="surname">Prénom:</label>
-               <input type="text" id="surname" name="surname" required>
+               <input type="text" id="surname" name="surname" required><br>
 
                <label for="age">Âge (mineurs autorisés avec accord des tuteurs légaux)</label>
-               <input type="number" id="age" name="age" required>
+               <input type="number" id="age" name="age" required><br>
 
                <label for="email">Email:</label>
-               <input type="email" id="email" name="email" required>
+               <input type="email" id="email" name="email" required><br>
 
                <label for="tel">Numéro de téléphone:</label>
-               <input type="text" id="tel" name="tel" required>
+               <input type="text" id="tel" name="tel" required><br>
 
                <label for="sports">:Quels sports as-tu déja pratiqués ou pratiques-tu actuellement?</label>
-               <input type="text" id="sports" name="sports" required>
+               <input type="text" id="sports" name="sports" required><br>
 
                
                <fieldset>
@@ -45,9 +46,11 @@
                     <label for="expert">Plus d'1 an</label>
                     <input type="radio" id="expert" name="level" value="expert" required>
                </fieldset>
+               <br>
+
 
                <label for="goal">Ton objectif? (Un physique à atteindre, une course, une performance à réaliser, un point à améliorer?)</label>
-               <input type="text" id="goal" name="goal" required>
+               <input type="text" id="goal" name="goal" required><br>
 
                <fieldset>
                     <legend>Combien de séances pourrais-tu faire par semaine ?</legend>
@@ -67,9 +70,10 @@
                     <label for="5">5 fois ou plus</label>
                     <input type="radio" id="5" name="sessions" value="5" required>
                </fieldset>
+               <br>
 
                <label for="tpsseance">Combien de temps consacres-tu à chaque séance?</label>
-               <input type="text" id="tpsseance" name="tpsseance" required>
+               <input type="text" id="tpsseance" name="tpsseance" required><br>
 
                <fieldset>
                     <legend>As-tu déjà eu ou as-tu actuellement des blessures/problèmes de santé?</legend>
@@ -83,9 +87,10 @@
                     <label for="injury_details">Autre</label>
                     <input type="text" id="injury_details" name="injury_details">
                </fieldset>
+               <br>
 
                <label for="mouvements">Si oui, lesquels et sur quels types de mouvements cela t'impactes-t'il ?</label>
-               <input type="text" id="mouvements" name="mouvements">
+               <input type="text" id="mouvements" name="mouvements"><br>
 
                <fieldset>
                     <legend>Y-a-t'il des exercices que tu ne te sens pas à l'aise de faire?</legend>
@@ -96,12 +101,13 @@
                     <label for="no">Non</label>
                     <input type="radio" id="no" name="aisance" value="no" required>
                </fieldset>
+               <br>
 
                <label for="aisance_details">Si oui, lesquels et pourquoi?</label>
-               <input type="text" id="aisance_details" name="aisance_details">
+               <input type="text" id="aisance_details" name="aisance_details"><br>
 
                <label for="allergies">As-tu des allergies ou intolérances alimentaires/régime particulier (végétarien, etc.)?</label>
-               <input type="text" id="allergies" name="allergies">
+               <input type="text" id="allergies" name="allergies"><br>
 
                <fieldset>
                     <legend>Dans une journée typique, tu es quelqu'un qui...</legend>
@@ -118,9 +124,10 @@
                     <label for="activity_level_details">Autre</label>
                     <input type="text" id="activity_level_details" name="activity_level_details">
                </fieldset>
+               <br>
 
                <label for="mensurations">Quelles sont tes mensurations ? (taille, poids)</label>
-               <input type="text" id="mensurations" name="mensurations">
+               <input type="text" id="mensurations" name="mensurations"><br>
 
                <fieldset>
                     <legend>
@@ -141,6 +148,7 @@
                     <label for="commitment_details">Avec de l'aide et de la motivation oui bien sûr!</label>
                     <input type="radio" id="commitment_details" name="commitment_details">
                </fieldset>
+               <br>
 
                <fieldset>
                     <legend>Comment es-tu tombé sur mes services de coaching?</legend>
@@ -160,16 +168,25 @@
                     <label for="other">Autre</label>
                     <input type="text" id="other" name="source" value="other">
                </fieldset>
+               <br>
 
                <label for="entretien">Entretien téléphonique (10 - 15 minutes). Donnes-moi 
                     deux ou trois créneaux horaires qui t'iraient afin d'établir ton premier 
                     rendez-vous téléphonique.</label>
+               <input type="text" id="entretien" name="entretien"><br>
 
                <label for="message">Tu as fini ton questionnaire ! Des retours à faire? N'hésite pas 👍</label>
-               <textarea id="message" name="message" rows="4" cols="50"></textarea>
+               <textarea id="message" name="message" rows="1" cols="50"></textarea><br>
           
                <button type="submit">Termine ton questionnaire 🔥</button>
           </form>
+     </section>
+     <section>
+          <h1>Me contacter</h1>
+          <p>Tu peux me contacter par mail, whatsapp ou instagram: </p>
+          <p>Mail: xxxx</p>
+          <p>Whatsapp: xxx</p>
+          <p>Instagram: @remi.athlx</p>
      </section>
      
 </body>

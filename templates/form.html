@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rémi Derrien | Form</title>
+</head>
+<body>
+     <section>
+          <h1>Formulaire de contact</h1>
+          <p>Rémi Derrien, coaching sportif</p>
+
+          <form action="" method="POST">
+               <label for="name">Nom:</label>
+               <input type="text" id="name" name="name" required>
+
+               <label for="surname">Prénom:</label>
+               <input type="text" id="surname" name="surname" required>
+
+               <label for="age">Âge (mineurs autorisés avec accord des tuteurs légaux)</label>
+               <input type="number" id="age" name="age" required>
+
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+
+               <label for="tel">Numéro de téléphone:</label>
+               <input type="text" id="tel" name="tel" required>
+
+               <label for="sports">:Quels sports as-tu déja pratiqués ou pratiques-tu actuellement?</label>
+               <input type="text" id="sports" name="sports" required>
+
+               
+               <fieldset>
+                    <legend>À quel niveau estimerais-tu ton niveau en musculation?</legend>
+
+                    <label for="beginner">Je n'y suis jamais allé pour le moment</label>
+                    <input type="radio" id="beginner" name="level" value="beginner" required>
+
+                    <label for="intermediate">Moins de 6 mois</label>
+                    <input type="radio" id="intermediate" name="level" value="intermediate" required>
+               
+                    <label for="advanced">1 an</label>
+                    <input type="radio" id="advanced" name="level" value="advanced" required>
+
+                    <label for="expert">Plus d'1 an</label>
+                    <input type="radio" id="expert" name="level" value="expert" required>
+               </fieldset>
+
+               <label for="goal">Ton objectif? (Un physique à atteindre, une course, une performance à réaliser, un point à améliorer?)</label>
+               <input type="text" id="goal" name="goal" required>
+
+               <fieldset>
+                    <legend>Combien de séances pourrais-tu faire par semaine ?</legend>
+
+                    <label for="1">1 fois</label>
+                    <input type="radio" id="1" name="sessions" value="1" required>
+
+                    <label for="2">2 fois</label>
+                    <input type="radio" id="2" name="sessions" value="2" required>
+
+                    <label for="3">3 fois</label>
+                    <input type="radio" id="3" name="sessions" value="3" required>
+
+                    <label for="4">4 fois</label>
+                    <input type="radio" id="4" name="sessions" value="4" required>
+
+                    <label for="5">5 fois ou plus</label>
+                    <input type="radio" id="5" name="sessions" value="5" required>
+               </fieldset>
+
+               <label for="tpsseance">Combien de temps consacres-tu à chaque séance?</label>
+               <input type="text" id="tpsseance" name="tpsseance" required>
+
+               <fieldset>
+                    <legend>As-tu déjà eu ou as-tu actuellement des blessures/problèmes de santé?</legend>
+               
+                    <label for="yes">Oui</label>
+                    <input type="radio" id="yes" name="injury" value="yes" required>
+
+                    <label for="no">Non</label>
+                    <input type="radio" id="no" name="injury" value="no" required>
+
+                    <label for="injury_details">Autre</label>
+                    <input type="text" id="injury_details" name="injury_details">
+               </fieldset>
+
+               <label for="mouvements">Si oui, lesquels et sur quels types de mouvements cela t'impactes-t'il ?</label>
+               <input type="text" id="mouvements" name="mouvements">
+
+               <fieldset>
+                    <legend>Y-a-t'il des exercices que tu ne te sens pas à l'aise de faire?</legend>
+               
+                    <label for="yes">Oui</label>
+                    <input type="radio" id="yes" name="aisance" value="yes" required>
+
+                    <label for="no">Non</label>
+                    <input type="radio" id="no" name="aisance" value="no" required>
+               </fieldset>
+
+               <label for="aisance_details">Si oui, lesquels et pourquoi?</label>
+               <input type="text" id="aisance_details" name="aisance_details">
+
+               <label for="allergies">As-tu des allergies ou intolérances alimentaires/régime particulier (végétarien, etc.)?</label>
+               <input type="text" id="allergies" name="allergies">
+
+               <fieldset>
+                    <legend>Dans une journée typique, tu es quelqu'un qui...</legend>
+
+                    <label for="active">Se déplace beaucoup (ex: métier physique, + 10 000 pas/jours)</label>
+                    <input type="radio" id="active" name="activity_level" value="active" required>
+
+                    <label for="moderate">A une activité modérée (ex: 5 000 pas par jours)</label>
+                    <input type="radio" id="moderate" name="activity_level" value="moderate" required>
+
+                    <label for="sedentary">Est plutôt sédentaire (ex: télétravail, travail de bureau, études, etc.)</label>
+                    <input type="radio" id="sedentary" name="activity_level" value="sedentary" required>
+
+                    <label for="activity_level_details">Autre</label>
+                    <input type="text" id="activity_level_details" name="activity_level_details">
+               </fieldset>
+
+               <label for="mensurations">Quelles sont tes mensurations ? (taille, poids)</label>
+               <input type="text" id="mensurations" name="mensurations">
+
+               <fieldset>
+                    <legend>
+                         Le suivi que je te propose repose sur un entraînement  et une alimentation
+                         adaptés à tes besoins et objectifs. Chaque semaine, un bilan sera effectué
+                         pour suivre ta progression. Les écarts sont autorisés, car nous restons
+                         humains, mais ils ne doivent en aucun cas devenir une excuse pour ralentir ou 
+                         abandonner ! Maintenant que tu connais tous les détails, es-tu toujours 
+                         prêt(e) à relever le défi ? 💪🔥
+                    </legend>
+
+                    <label for="yes">Oui</label>
+                    <input type="radio" id="yes" name="commitment" value="yes">
+
+                    <label for="no">Non</label>
+                    <input type="radio" id="no" name="commitment" value="no">
+
+                    <label for="commitment_details">Avec de l'aide et de la motivation oui bien sûr!</label>
+                    <input type="radio" id="commitment_details" name="commitment_details">
+               </fieldset>
+
+               <fieldset>
+                    <legend>Comment es-tu tombé sur mes services de coaching?</legend>
+
+                    <label for="instagram">Réseaux Sociaux</label>
+                    <input type="radio" id="instagram" name="source" value="instagram">
+
+                    <label for="google">Site internet</label>
+                    <input type="radio" id="google" name="source" value="google">
+
+                    <label for="word_of_mouth">Bouche à oreille</label>
+                    <input type="radio" id="word_of_mouth" name="source" value="word_of_mouth">
+
+                    <label for="advertisement">Publicité</label>
+                    <input type="radio" id="advertisement" name="source" value="advertisement">
+
+                    <label for="other">Autre</label>
+                    <input type="text" id="other" name="source" value="other">
+               </fieldset>
+
+               <label for="entretien">Entretien téléphonique (10 - 15 minutes). Donnes-moi 
+                    deux ou trois créneaux horaires qui t'iraient afin d'établir ton premier 
+                    rendez-vous téléphonique.</label>
+
+               <label for="message">Tu as fini ton questionnaire ! Des retours à faire? N'hésite pas 👍</label>
+               <textarea id="message" name="message" rows="4" cols="50"></textarea>
+          
+               <button type="submit">Termine ton questionnaire 🔥</button>
+          </form>
+     </section>
+     
+</body>
+</html>

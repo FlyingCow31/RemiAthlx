@@ -4,35 +4,52 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Rémi Derrien | Form</title>
+     <link rel="stylesheet" href="../css/form.css">
      
 </head>
 <body>
      <section>
-          <h1>Formulaire de contact</h1>
-          <p>Rémi Derrien, coaching sportif</p>
-
+          <h1 class="formtitle">Formulaire de contact</h1>
+          <p class="formremi">Rémi Derrien, coaching sportif</p>
+<hr>
           <form action="" method="POST">
-               <label for="name">Nom:</label>
-               <input type="text" id="name" name="name" required> <br>
+               <div class="infosperso">
+                    
+                    <div class="boxname">
+                         <label for="name" class="namelab">Nom</label>
+                         <input type="text" id="name" name="name" required class="name" placeholder="Entrez votre nom"><br>
+                    </div>
 
-               <label for="surname">Prénom:</label>
-               <input type="text" id="surname" name="surname" required><br>
+                    <div class="boxsurname">
+                         <label for="surname" class="surlab">Prénom</label>
+                         <input placeholder="Votre prénom" type="text" id="surname" name="surname" required class="surname"><br>
+                    </div> 
+               
+               
+                    <div class="boxage">
+                          <label for="age" class="agelab">Âge </label>
+                           <textarea class="age" id="age" name="age" required
+                          placeholder="(mineurs autorisés avec accord des tuteurs légaux)"
+                          rows="2" cols="61"></textarea><br>
+                    </div>
+                    
 
-               <label for="age">Âge (mineurs autorisés avec accord des tuteurs légaux)</label>
-               <input type="number" id="age" name="age" required><br>
+                    <div class="boxphone">
+                         <label class="phonlab" for="tel">Tél.</label>
+                         <input placeholder="+33 6 72 72 72 72" class="phone" type="text" id="tel" name="tel" required><br>
+                    </div>
 
-               <label for="email">Email:</label>
-               <input type="email" id="email" name="email" required><br>
-
-               <label for="tel">Numéro de téléphone:</label>
-               <input type="text" id="tel" name="tel" required><br>
-
-               <label for="sports">:Quels sports as-tu déja pratiqués ou pratiques-tu actuellement?</label>
-               <input type="text" id="sports" name="sports" required><br>
+                    <div class="boxemail">
+                          <label class="emaillab" for="email">Email</label>
+                          <input placeholder="remi.athlx@gmail.com" class="email" type="email" id="email" name="email" required><br>
+                    </div>
+               </div>
+               <label class="sportlab" for="sports">:Quels sports as-tu déja pratiqués ou pratiques-tu actuellement?</label>
+               <input class="sport" type="text" id="sports" name="sports" required><br>
 
                
-               <fieldset>
-                    <legend>À quel niveau estimerais-tu ton niveau en musculation?</legend>
+               <fieldset class="lvlmusc">
+                    <legend class="lvlmusclab">À quel niveau estimerais-tu ton niveau en musculation?</legend>
 
                     <label for="beginner">Je n'y suis jamais allé pour le moment</label>
                     <input type="radio" id="beginner" name="level" value="beginner" required>

@@ -23,12 +23,23 @@ label {
      margin-left: 10px;
      margin-right: 10px;
 }
+legend {
+     color: rgb(179, 179, 17);
+     font-size: 1.5em;
+     margin-left: 10px;
+     margin-right: 10px;
+}
 /* input[type="text"], input[type="email"], input[type="number"], input[type="tel"] { */
      /* border: #ffffff 1px solid; */
      /* border-radius: 10px; */
      /* padding: 10px; */
      /* padding-right: 300px; */
 /* } */
+.intersection {
+     width: 50%;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
 
 /* * En-tête */
 
@@ -50,8 +61,8 @@ label {
 .infosperso {
      display: flex;
      flex-wrap: wrap;
-     margin-right: 200px;
-     margin-left: 200px;
+     margin-right: 190px;
+     margin-left: 400px;
 }
 
 .boxname, .boxsurname {
@@ -62,14 +73,14 @@ label {
      border: #ffffff 1px solid;
      border-radius: 10px;
      padding: 10px;
-     padding-right: 300px;
+     width: 332px;
 }
 
 .surname {
      border: #ffffff 1px solid;
      border-radius: 10px;
      padding: 10px;
-     padding-right: 300px;
+     width: 300px;
 }
 
 .boxage, .boxphone {
@@ -80,16 +91,17 @@ label {
      background-color: rgb(4, 4, 4);
      border-radius: 10px;
      margin-top: 15px;
-     margin-left: 8px;
+     margin-left: 9px;
      color: #ffffff;
+     width: 350px;
 }
 .phone {
      border: #ffffff 1px solid;
      border-radius: 10px;
      padding: 10px;
-     padding-right: 300px;
      margin-left: 50px;
      margin-top: 15px;
+     width: 300px;
 }
 
 .boxemail {
@@ -98,7 +110,120 @@ label {
 .email {
      border: #ffffff 1px solid;
      border-radius: 10px;
-     padding: 10px;
-     padding-right: 980px;
+     padding: 9px;
      margin-top: 10px;
+     margin-left: -2px;
+     width: 980px;
+}
+.boxsports {
+     flex: 1 1 100%;
+}
+.sport {
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     padding: 9px;
+     margin-top: 10px;
+     width: 360px;
+}
+
+/* * Formulaire d'infos sur la musculation */
+
+.infomuscu {
+     display: flex;
+     flex-wrap: wrap;
+     margin-right: 402px;
+     margin-left: 400px;
+}
+
+.lvlmusc {
+     flex: 1 1 100%;
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     width: 980px;
+     margin-bottom: 10px;
+}
+.lvlmusc label {
+     color: whitesmoke;
+}
+
+.boxgoal {
+     flex: 1 1 100%;
+}
+.goal {
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 920px;
+     height: 40px;
+     margin-bottom: 10px;
+}
+
+.sessions {
+     flex: 1 1 100%;
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     width: 980px;
+     margin-bottom: 10px;
+}
+.sessions label {
+     color: whitesmoke;
+}
+
+.boxseance {
+     flex: 1 1 100%;
+}
+.tpsseance {
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 520px;
+     height: 40px;
+     margin-bottom: 10px;
+}
+
+.injury {
+     flex: 1 1 100%;
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     width: 980px;
+     margin-bottom: 20px;
+}
+.injury label {
+     color: whitesmoke;
+}
+
+
+.boxmouvs {
+     flex: 1 1 100%;
+}
+.mouvements {
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 1080px;
+     height: 40px;
+     margin-bottom: 10px;
+}
+
+.aisance {
+     flex: 1 1 100%;
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     width: 980px;
+     margin-bottom: 10px;
+}
+.aisance label {
+     color: whitesmoke;
+}
+
+.boxdetails {
+     flex: 1 1 100%;
+}
+.aisance_details {
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 755px;
+     height: 40px;
+     margin-bottom: 10px;
 }

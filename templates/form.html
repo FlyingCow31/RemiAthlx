@@ -17,12 +17,12 @@
                     
                     <div class="boxname">
                          <label for="name" class="namelab">Nom</label>
-                         <input type="text" id="name" name="name" required class="name" placeholder="Entrez votre nom"><br>
+                         <input type="text" id="name" name="name" required class="name"><br>
                     </div>
 
                     <div class="boxsurname">
                          <label for="surname" class="surlab">Prénom</label>
-                         <input placeholder="Votre prénom" type="text" id="surname" name="surname" required class="surname"><br>
+                         <input type="text" id="surname" name="surname" required class="surname"><br>
                     </div> 
                
                
@@ -43,88 +43,101 @@
                           <label class="emaillab" for="email">Email</label>
                           <input placeholder="remi.athlx@gmail.com" class="email" type="email" id="email" name="email" required><br>
                     </div>
+                    
+                    <div class="boxsports">
+                          <label class="sportlab" for="sports">Quels sports as-tu déjà pratiqués ou pratiques-tu actuellement?</label>
+                          <input placeholder="Tennis, rugby, etc."  class="sport" type="text" id="sports" name="sports" required><br>
+                    </div>
+
                </div>
-               <label class="sportlab" for="sports">:Quels sports as-tu déja pratiqués ou pratiques-tu actuellement?</label>
-               <input class="sport" type="text" id="sports" name="sports" required><br>
-
                
-               <fieldset class="lvlmusc">
-                    <legend class="lvlmusclab">À quel niveau estimerais-tu ton niveau en musculation?</legend>
+               <hr class="intersection">
 
-                    <label for="beginner">Je n'y suis jamais allé pour le moment</label>
-                    <input type="radio" id="beginner" name="level" value="beginner" required>
+               <div class="infomuscu">
+                    
+                    <fieldset class="lvlmusc">
+                         
+                         <legend class="lvlmusclab">À quel niveau estimerais-tu ton niveau en musculation?</legend>
+                              
+                         <label for="beginner">Je n'y suis jamais allé pour le moment</label>
+                         <input type="radio" id="beginner" name="level" value="beginner" required>
 
-                    <label for="intermediate">Moins de 6 mois</label>
-                    <input type="radio" id="intermediate" name="level" value="intermediate" required>
-               
-                    <label for="advanced">1 an</label>
-                    <input type="radio" id="advanced" name="level" value="advanced" required>
+                         <label for="intermediate">Moins de 6 mois</label>
+                         <input type="radio" id="intermediate" name="level" value="intermediate" required>
 
-                    <label for="expert">Plus d'1 an</label>
-                    <input type="radio" id="expert" name="level" value="expert" required>
-               </fieldset>
-               <br>
+                         <label for="advanced">1 an</label>
+                         <input type="radio" id="advanced" name="level" value="advanced" required>
+
+                         <label for="expert">Plus d'1 an</label>
+                         <input type="radio" id="expert" name="level" value="expert" required>
+                    </fieldset>
+
+                    <div class="boxgoal">
+                         <label for="goal">Ton objectif?</label>
+                         <input type="text" id="goal" name="goal" class="goal" required placeholder="Un physique à atteindre, une course, une performance à réaliser, un point à améliorer?">
+                    </div>
+
+                    <fieldset class="sessions">
+                         <legend>Combien de séances pourrais-tu faire par semaine ?</legend>
+                         <label for="1">1 fois</label>
+                         <input type="radio" id="1" name="sessions" value="1" required>
+
+                         <label for="2">2 fois</label>
+                         <input type="radio" id="2" name="sessions" value="2" required>
+
+                         <label for="3">3 fois</label>
+                         <input type="radio" id="3" name="sessions" value="3" required>
+
+                         <label for="4">4 fois</label>
+                         <input type="radio" id="4" name="sessions" value="4" required>
+
+                         <label for="5">5 fois ou plus</label>
+                         <input type="radio" id="5" name="sessions" value="5" required>
+                    </fieldset>
+                    
+
+                    <div class="boxseance">
+                         <label for="tpsseance">Combien de temps consacres-tu à chaque séance?</label>
+                         <input type="text" id="tpsseance" name="tpsseance" class="tpsseance" required>
+                    </div>
+
+                    <fieldset class="injury">
+                         <legend>As-tu déjà eu ou as-tu actuellement des blessures/problèmes de santé?</legend>
+                         <label for="yes">Oui</label>
+                         <input type="radio" id="yes" name="injury" value="yes" required>
+
+                         <label for="no">Non</label>
+                         <input type="radio" id="no" name="injury" value="no" required>
+
+                         <label for="injury_details">Autre</label>
+                         <input type="text" id="injury_details" name="injury_details">
+                    </fieldset>
+
+                    <div class="boxmouvs">
+                         <label for="mouvements">Si oui, lesquels et sur quels types de mouvements cela t'impactes-t'il ?</label>
+                         <input type="text" id="mouvements" name="mouvements" class="mouvements" placeholder="Décris ici les mouvements qui te posent problème.">
+                    </div>
+
+                    <fieldset class="aisance">
+                         <legend>Y-a-t'il des exercices que tu ne te sens pas à l'aise de faire?</legend>
+                         <label for="yes">Oui</label>
+                         <input type="radio" id="yes" name="aisance" value="yes" required>
+
+                         <label for="no">Non</label>
+                         <input type="radio" id="no" name="aisance" value="no" required>
+                    </fieldset>
+
+                    <div class="boxdetails">
+                         <label for="aisance_details">Si oui, lesquels et pourquoi?</label>
+                         <input type="text" id="aisance_details" name="aisance_details" class="aisance_details">
+                    </div>
+
+               </div>
 
 
-               <label for="goal">Ton objectif? (Un physique à atteindre, une course, une performance à réaliser, un point à améliorer?)</label>
-               <input type="text" id="goal" name="goal" required><br>
-
-               <fieldset>
-                    <legend>Combien de séances pourrais-tu faire par semaine ?</legend>
-
-                    <label for="1">1 fois</label>
-                    <input type="radio" id="1" name="sessions" value="1" required>
-
-                    <label for="2">2 fois</label>
-                    <input type="radio" id="2" name="sessions" value="2" required>
-
-                    <label for="3">3 fois</label>
-                    <input type="radio" id="3" name="sessions" value="3" required>
-
-                    <label for="4">4 fois</label>
-                    <input type="radio" id="4" name="sessions" value="4" required>
-
-                    <label for="5">5 fois ou plus</label>
-                    <input type="radio" id="5" name="sessions" value="5" required>
-               </fieldset>
-               <br>
-
-               <label for="tpsseance">Combien de temps consacres-tu à chaque séance?</label>
-               <input type="text" id="tpsseance" name="tpsseance" required><br>
-
-               <fieldset>
-                    <legend>As-tu déjà eu ou as-tu actuellement des blessures/problèmes de santé?</legend>
-               
-                    <label for="yes">Oui</label>
-                    <input type="radio" id="yes" name="injury" value="yes" required>
-
-                    <label for="no">Non</label>
-                    <input type="radio" id="no" name="injury" value="no" required>
-
-                    <label for="injury_details">Autre</label>
-                    <input type="text" id="injury_details" name="injury_details">
-               </fieldset>
-               <br>
-
-               <label for="mouvements">Si oui, lesquels et sur quels types de mouvements cela t'impactes-t'il ?</label>
-               <input type="text" id="mouvements" name="mouvements"><br>
-
-               <fieldset>
-                    <legend>Y-a-t'il des exercices que tu ne te sens pas à l'aise de faire?</legend>
-               
-                    <label for="yes">Oui</label>
-                    <input type="radio" id="yes" name="aisance" value="yes" required>
-
-                    <label for="no">Non</label>
-                    <input type="radio" id="no" name="aisance" value="no" required>
-               </fieldset>
-               <br>
-
-               <label for="aisance_details">Si oui, lesquels et pourquoi?</label>
-               <input type="text" id="aisance_details" name="aisance_details"><br>
 
                <label for="allergies">As-tu des allergies ou intolérances alimentaires/régime particulier (végétarien, etc.)?</label>
-               <input type="text" id="allergies" name="allergies"><br>
+               <input type="text" id="allergies" name="allergies">
 
                <fieldset>
                     <legend>Dans une journée typique, tu es quelqu'un qui...</legend>

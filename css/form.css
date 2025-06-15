@@ -29,6 +29,9 @@ legend {
      margin-left: 10px;
      margin-right: 10px;
 }
+.underline {
+     text-decoration: underline 1px solid whitesmoke;
+}
 /* input[type="text"], input[type="email"], input[type="number"], input[type="tel"] { */
      /* border: #ffffff 1px solid; */
      /* border-radius: 10px; */
@@ -226,4 +229,165 @@ legend {
      width: 755px;
      height: 40px;
      margin-bottom: 10px;
+}
+
+/* * Formulaire de nutrition/info */
+
+.infodiet {
+     display: flex;
+     flex-wrap: wrap;
+     margin-right: 402px;
+     margin-left: 400px;
+}
+
+.boxallergies {
+     flex: 1 1 100%;
+}
+
+.allergies {
+     
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 1080px;
+     height: 40px;
+     margin-bottom: 10px;
+}
+
+.boxactivity {
+     flex: 1 1 100%;
+}
+.activity_level label {
+     color: whitesmoke;
+}
+
+.activity_level {
+     flex: 1 1 100%;
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 1080px;
+     height: 170px;
+     margin-bottom: 10px;
+}
+
+.boxmensurations {
+     flex: 1 1 100%;
+}
+.mensurations {
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 1080px;
+     height: 40px;
+     margin-bottom: 10px;
+}
+.mensurations label {
+     color: whitesmoke;
+}
+
+
+/* * Section est-tu sur ? */
+
+.infocommitment {
+     display: flex;
+     flex-wrap: wrap;
+     margin-right: 402px;
+     margin-left: 400px;
+     margin-top: 20px;
+}
+.boxcommitment {
+     flex: 1 1 100%;
+}
+.boxcommitment label {
+     color: whitesmoke;
+}
+
+/* * Informations sur le service */
+
+.infoservice {
+     display: flex;
+     flex-wrap: wrap;
+     margin-right: 402px;
+     margin-left: 400px;
+     margin-top: 20px;
+}
+
+.boxservice {
+     flex: 1 1 100%;
+}
+.boxservice label {
+     color: whitesmoke;
+}
+
+.boxentretien {
+     flex: 1 1 100%;
+     margin-top: 40px;
+}
+.entretien {
+     border: #ffffff 1px solid;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 1080px;
+     height: 40px;
+     margin-bottom: 10px;
+}
+
+.boxretours {
+     flex: 1 1 100%;
+}
+.retours {
+     background-color: rgb(4, 4, 4);
+     border: #ffffff 1px solid;
+     color: whitesmoke;
+     font: 1em sans-serif;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 1080px;
+     height: 40px;
+     margin-bottom: 10px;
+}
+
+.submitbutton {
+     font-size: 2em;
+     background-color: rgb(4, 4, 4);
+     color:rgb(179, 179, 17);
+     border: #ffffff 1px solid;
+     border-radius: 7px;
+     margin-left: 710px;
+     padding: 5px 10px;
+     margin-top: 20px;
+}
+
+
+/* * Bannière  */
+.banniere {
+     display: block;
+     background-color: rgb(7, 7, 7);
+     border-top: #ffffff 1px solid;
+     margin-top: 40px;
+     padding-bottom: 20px;
+}
+
+.banniere h1 {
+     text-align: center;
+     font-size: 2em;
+     color: rgb(209, 209, 18);
+     margin-top: 20px;
+}
+.phrasebann {
+     text-align: center;
+     font-size: 1.5em;
+     color: #ffffff;
+     margin-top: -20px;
+     margin-bottom: 20px;
+     text-decoration: underline 1px whitesmoke;
+}
+
+.contactbann {
+     text-align: center;
+     font-size: 1em;
+     color: #ffffff;
+     margin-top: -10px;
+     margin-bottom: 20px;
 }

@@ -11,6 +11,9 @@ Design simple noir/Titres jaunes + texte blanc Icones en blanc
 > Pour tous niveau et tout public 
 > Prix assez conséquent donc à voir selon le devis > Faire la vente au téléphone ! 
 
-> Copyright the file
+
+
+> Copyright the file + add credits
+> Mentions légales
 > Responsive design
 > Animations

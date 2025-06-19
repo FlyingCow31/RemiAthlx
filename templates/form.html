@@ -100,7 +100,7 @@
                     
 
                     <div class="boxseance">
-                         <label for="tpsseance">Combien de temps consacres-tu à chaque séance?</label>
+                         <label for="tpsseance" class="tpsseance2">Combien de temps consacres-tu à chaque séance?</label>
                          <input type="text" id="tpsseance" name="tpsseance" class="tpsseance" required>
                     </div>
 
@@ -113,11 +113,11 @@
                          <input type="radio" id="no" name="injury" value="no" required>
 
                          <label for="injury_details">Autre</label>
-                         <input type="text" id="injury_details" name="injury_details">
+                         <input type="text" id="injury_details" name="injury_details" class="injury_details" >
                     </fieldset>
 
                     <div class="boxmouvs">
-                         <label for="mouvements">Si oui, lesquels et sur quels types de mouvements cela t'impactes-t'il ?</label>
+                         <label for="mouvements" class="mouvdet">Si oui, lesquels et sur quels types de mouvements cela t'impactes-t'il </label>
                          <input type="text" id="mouvements" name="mouvements" class="mouvements" placeholder="Décris ici les mouvements qui te posent problème.">
                     </div>
 
@@ -131,17 +131,17 @@
                     </fieldset>
 
                     <div class="boxdetails">
-                         <label for="aisance_details">Si oui, lesquels et pourquoi?</label>
-                         <input type="text" id="aisance_details" name="aisance_details" class="aisance_details">
+                         <label for="aisance_details" class="aisance_details2" >Si oui, lesquels et pourquoi?</label>
+                         <input type="text" id="aisance_details" name="aisance_details" class="aisance_details" placeholder="Décris ici les exercices qui te posent problème.">
                     </div>
 
                </div>
 
-
+<hr>
           <div class="infodiet"> 
                
                <div class="boxallergies">
-                    <label for="allergies">As-tu des allergies ou intolérances alimentaires/régime particulier (végétarien, etc.)?</label>
+                    <label for="allergies" class="allergieslab" >As-tu des allergies ou intolérances alimentaires/régime particulier (végétarien, etc.)?</label>
                     <input type="text" id="allergies" name="allergies" class="allergies">
                </div>
 
@@ -165,21 +165,24 @@
                </div>
 
                <div class="boxmensurations">
-                    <label for="mensurations">Quelles sont tes mensurations ? (taille, poids)</label>
+                    <label for="mensurations" class="mensulab" >Quelles sont tes mensurations ? (taille, poids)</label>
                     <input type="text" id="mensurations" name="mensurations" class="mensurations" placeholder="Ex: 1m80, 75kg">
                </div>
           </div>
 
 
           <div class="infocommitment">
+               <p class="morale">
+                    Le suivi que je te propose repose sur un entraînement et une alimentation
+                    <span class="underline"> adaptés à tes besoins et objectifs</span>. Chaque semaine, un bilan sera effectué
+                    pour suivre ta progression. Les écarts sont autorisés, car nous restons
+                    humains, mais ils ne doivent en aucun cas devenir <span class="underline">une excuse pour ralentir ou
+                    abandonner !</span>
+               </p>
                <div class="boxcommitment">
                <fieldset>
                     <legend>
-                         Le suivi que je te propose repose sur un entraînement  et une alimentation
-                         adaptés à tes besoins et objectifs. Chaque semaine, un bilan sera effectué
-                         pour suivre ta progression. Les écarts sont autorisés, car nous restons
-                         humains, mais ils ne doivent en aucun cas devenir une excuse pour ralentir ou 
-                         abandonner ! Maintenant que tu connais tous les détails, es-tu toujours 
+                         Maintenant que tu connais tous les détails, es-tu toujours 
                          prêt(e) à relever le défi ? 💪🔥
                     </legend>
 
@@ -190,7 +193,7 @@
                     <input type="radio" id="no" name="commitment" value="no"> <br>
 
                     <label for="commitment_details">Avec de l'aide et de la motivation oui bien sûr!</label>
-                    <input type="radio" id="commitment_details" name="commitment_details"> <br>
+                    <input type="radio" id="commitment_details" name="commitment_details" class="commitment_details" > <br>
 
                </fieldset>
                </div>
@@ -214,14 +217,14 @@
                     <input type="radio" id="advertisement" name="source" value="advertisement">
 
                     <label for="other">Autre</label>
-                    <input type="text" id="other" name="source">
+                    <input type="text" id="other" name="source" class="sourcedet" >
                </fieldset>
                </div>
 
 
                <div class="boxentretien">
-               <label for="entretien">
-               Entretien téléphonique ( 10 - 15 minutes ). Donnes-moi 
+                    <label for="entretien" class="entretienlab">
+                    Entretien téléphonique ( 10 - 15 minutes ). Donnes-moi 
                     deux ou trois créneaux horaires qui t'iraient afin d'établir ton premier 
                     rendez-vous téléphonique.
                </label>
@@ -229,20 +232,21 @@
                </div>
 
                <div class="boxretours">
-               <label for="message">Tu as fini ton questionnaire ! Des retours à faire? N'hésite pas 👍</label>
+               <label for="message" class="messlab" >Tu as fini ton questionnaire ! Des retours à faire? N'hésite pas 👍</label>
                <textarea id="message" name="message" rows="1" cols="50" class="retours" ></textarea>
           </div>
 
           </div>
-               <button type="submit" class="submitbutton">Termine ton questionnaire 🔥</button>
+          
+          <button type="submit" class="submitbutton">Termine ton questionnaire 🔥</button>
      </form>
 </section>
      <section class="banniere">
           <h1>Me contacter</h1>
           <p class="phrasebann">Tu peux me contacter par mail, whatsapp ou instagram: </p>
-          <p class="contactbann"><span class="underline">Mail</span>: remi.athlx@gmail.com</p>
-          <p class="contactbann"><span class="underline">Whatsapp</span>: 07 82 84 68 86</p>
-          <p class="contactbann"><span class="underline">Instagram</span>: @remi.athlx</p>
+          <p class="contactbann"><span class="underline2">Mail</span>: remi.athlx@gmail.com</p>
+          <p class="contactbann"><span class="underline2">Whatsapp</span>: 07 82 84 68 86</p>
+          <p class="contactbann"><span class="underline2">Instagram</span>: @remi.athlx</p>
      </section>
      
 </body>

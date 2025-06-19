@@ -1,4 +1,4 @@
-To do : 
+Cahiers des charges:
 Design simple noir/Titres jaunes + texte blanc Icones en blanc 
 - Support pour que les gens aient accès au formulaire de contact 
 - formulaire (repris de google doc)
@@ -12,8 +12,10 @@ Design simple noir/Titres jaunes + texte blanc Icones en blanc
 > Prix assez conséquent donc à voir selon le devis > Faire la vente au téléphone ! 
 
 
-
+To DO: 
 > Copyright the file + add credits
 > Mentions légales
 > Responsive design
+- Responsive design tablette + PC seulement sur form
+> Fix form 
 > Animations

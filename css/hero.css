@@ -6,9 +6,10 @@ body {
 }
 .bold {
      font-weight: bold;
+     color: rgb(209, 209, 18);
 }
 
-.banniere h1 {
+.bannerdebut h1 {
      color: rgb(209, 209, 18);
      font-size: 50px;
      text-align: center;

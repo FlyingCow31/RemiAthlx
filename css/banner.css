@@ -1,30 +1,32 @@
-body {
-     background-color: rgb(4, 4, 4);
-     margin: 0px;
+/* * Bannière  */
+.banniere {
+     display: block;
+     background-color: rgb(7, 7, 7);
+     border-top: #ffffff 1px solid;
+     margin-top: 40px;
+     padding-bottom: 20px;
 }
 
-.titlebanner {
-     color: antiquewhite;
-     font-size: 20px;
-     margin-left: 10px;
-     margin-top: 13px;
-}
-.banner a {
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.banniere h1 {
+     text-align: center;
+     font-size: 2em;
+     color: rgb(209, 209, 18);
+     margin-top: 20px;
 }
 
-/* ! Responsive design is prioritary here */
-.accbann {
-     text-decoration: none;
-     color: rgb(209, 209, 18);
-     position: absolute;
-     top: 13px;
-     left: 800px;
+.phrasebann {
+     text-align: center;
+     font-size: 1.5em;
+     color: #ffffff;
+     margin-top: -20px;
+     margin-bottom: 20px;
+     text-decoration: underline 1px whitesmoke;
 }
-.acccon {
-     text-decoration: none;
-     color: rgb(209, 209, 18);
-     position: absolute;
-     top: 13px;
-     left: 960px;
+
+.contactbann {
+     text-align: center;
+     font-size: 1em;
+     color: #ffffff;
+     margin-top: -10px;
+     margin-bottom: 20px;
 }

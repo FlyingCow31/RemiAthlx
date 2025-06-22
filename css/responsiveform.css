@@ -460,7 +460,7 @@
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 709px) and (min-width: 391px) {
 
      body {
           background-color: rgb(4, 4, 4);

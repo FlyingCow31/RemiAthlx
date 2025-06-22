@@ -11,3 +11,26 @@
      }
 
 }
+
+@media screen and (max-width: 709px) and (min-width: 391px) {
+
+     .box2 {
+          top: 940px;
+          left: 25%;
+     }
+     .banniere {
+          margin-top: 400px;
+     }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 710px) {
+
+     .card1 {
+          margin-left: 300px;
+     }
+     .box2 {
+          left: 50px;
+     }
+
+}

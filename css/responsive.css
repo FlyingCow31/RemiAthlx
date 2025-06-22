@@ -1,6 +1,21 @@
 /* * Responsive design for phones */
+@media screen and (max-width: 340px) {
 
-@media screen and (max-width: 390px ) {
+     .card1 {
+          margin-left: 0px;
+     }
+     .box2 {
+          top: 1000px;
+          left: 25%;
+     }
+     .banniere {
+          margin-top: 400px;
+     }
+     
+}
+
+
+@media screen and (max-width: 390px ) and (min-width: 341px) {
 
      .box2 {
           top: 940px;

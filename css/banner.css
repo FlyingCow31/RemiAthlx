@@ -34,3 +34,13 @@
      text-decoration: underline #ffffff 1px solid;
      color: rgb(179, 179, 17);
 }
+.mentionsleg {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 0.8em;
+     color: #ffffff;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     text-align: center;
+}

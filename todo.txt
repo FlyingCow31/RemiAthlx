@@ -15,7 +15,7 @@ Design simple noir/Titres jaunes + texte blanc Icones en blanc
 To DO: 
 > Copyright the file + add credits
 > Mentions légales
-> Responsive design
-- Responsive design tablette + PC seulement sur form
-> Fix form 
+- [x] Responsive design
+- [x] Responsive design tablette + PC seulement sur form
+- [x] Fix form 
 > Animations

@@ -1,0 +1,68 @@
+
+
+/* * Templates */
+@keyframes fadeIn {
+     from { opacity: 0; }
+     to { opacity: 1; }
+}
+
+@keyframes slideUp {
+     from { transform: translateY(30px); opacity: 0; }
+     to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+     from {transform: translateX(50px); opacity: 0; }
+     to {transform: translateX(0px); opacity: 1; }
+}
+@keyframes slideLeft {
+     from {transform: translateX(-50px); opacity: 0; }
+     to {transform: translateX(0px); opacity: 1; }
+}
+@keyframes getBigger {
+     from { transform: scale(1)}
+     to { transform: scale(1.05)}
+}
+
+
+
+
+/* * Animations de la page d'accueil */
+.card1 {
+     animation: slideRight 0.8s ease-out;
+}
+.box2 {
+     animation: slideLeft 0.8s ease-out;
+}
+.offrecoaching h1 {
+     animation: fadeIn 0.8s ease-in;
+}
+
+
+
+/* * Animations de la page de formulaire */
+
+
+form {
+     animation: fadeIn 0.8s ease-in;
+}
+
+input[type="text"]:hover,input[type="email"]:hover {
+     background-color: rgb(19, 19, 19);
+}
+
+.submitbutton:hover {
+     background-color: rgb(179, 179, 17);
+     color: black;
+     cursor: pointer;
+     transform: scale(1.1);
+     transition: transform 0.2s;
+}
+
+
+/* * Animations de la bannière */
+
+.mentionsleg:hover {
+     color: rgb(179, 179, 17);
+     cursor: pointer;
+}

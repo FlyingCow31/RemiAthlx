@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="../css/banner.css">
      <link rel="stylesheet" href="../css/responsiveform.css">
      <link rel="stylesheet" href="../css/responsivetablet.css">
+     <link rel="stylesheet" href="../css/animations.css">
      
      <!-- ! Place the label at the right of the input field -->
 </head>
@@ -31,10 +32,9 @@
                
                
                     <div class="boxage">
-                          <label for="age" class="infolab">Âge </label>
-                           <textarea class="age" id="age" name="age" required
-                          placeholder="(mineurs autorisés avec accord des tuteurs légaux)"
-                          rows="2" cols="61"></textarea>
+                         <label for="age" class="infolab">Âge </label>
+                         <input type="text" class="age" id="age" name="age" required
+                         placeholder="(mineurs autorisés avec accord des tuteurs légaux)"></input>
                     </div>
                     
 
@@ -44,13 +44,13 @@
                     </div>
 
                     <div class="boxemail">
-                          <label for="email" class="infolab" >Email</label>
-                          <input placeholder="remi.athlx@gmail.com" class="email" type="email" id="email" name="email" required>
+                         <label for="email" class="infolab" >Email</label>
+                         <input placeholder="remi.athlx@gmail.com" class="email" type="email" id="email" name="email" required>
                     </div>
                     
                     <div class="boxsports">
-                          <label class="sportlab" for="sports">Quels sports as-tu déjà pratiqué ou pratiques-tu actuellement?</label>
-                          <input placeholder="Tennis, rugby, etc."  class="sport" type="text" id="sports" name="sports" required>
+                         <label class="sportlab" for="sports">Quels sports as-tu déjà pratiqué ou pratiques-tu actuellement?</label>
+                         <input placeholder="Tennis, rugby, etc."  class="sport" type="text" id="sports" name="sports" required>
                     </div>
 
                </div>
@@ -63,17 +63,17 @@
                          
                          <legend class="lvlmusclab">À quel niveau estimerais-tu ton niveau en musculation?</legend>
                               
-                         <label for="beginner">Je n'y suis jamais allé pour le moment</label>
                          <input type="radio" id="beginner" name="level" value="beginner" required>
-
-                         <label for="intermediate">Moins de 6 mois</label>
+                         <label for="beginner">Je n'y suis jamais allé pour le moment</label>
+                         <br>
                          <input type="radio" id="intermediate" name="level" value="intermediate" required>
-
-                         <label for="advanced">1 an</label>
+                         <label for="intermediate">Moins de 6 mois</label>
+                         <br>
                          <input type="radio" id="advanced" name="level" value="advanced" required>
-
-                         <label for="expert">Plus d'1 an</label>
+                         <label for="advanced">6 mois - 1 an</label>
+                         <br>
                          <input type="radio" id="expert" name="level" value="expert" required>
+                         <label for="expert">Plus d'1 an</label>
                     </fieldset>
 
                     <div class="boxgoal">
@@ -83,20 +83,22 @@
 
                     <fieldset class="sessions">
                          <legend>Combien de séances pourrais-tu faire par semaine ?</legend>
-                         <label for="1">1 fois</label>
+
+                         
                          <input type="radio" id="1" name="sessions" value="1" required>
-
-                         <label for="2">2 fois</label>
+                         <label for="1">1 fois</label>
+                         <br>
                          <input type="radio" id="2" name="sessions" value="2" required>
-
-                         <label for="3">3 fois</label>
+                         <label for="2">2 fois</label>
+                         <br>
                          <input type="radio" id="3" name="sessions" value="3" required>
-
-                         <label for="4">4 fois</label>
+                         <label for="3">3 fois</label>
+                                              <br>
                          <input type="radio" id="4" name="sessions" value="4" required>
-
-                         <label for="5">5 fois ou plus</label>
+                         <label for="4">4 fois</label>
+                                              <br>
                          <input type="radio" id="5" name="sessions" value="5" required>
+                         <label for="5">5 fois ou plus</label>
                     </fieldset>
                     
 
@@ -107,12 +109,12 @@
 
                     <fieldset class="injury">
                          <legend>As-tu déjà eu ou as-tu actuellement des blessures/problèmes de santé?</legend>
-                         <label for="yes">Oui</label>
                          <input type="radio" id="yes" name="injury" value="yes" required>
-
-                         <label for="no">Non</label>
+                         <label for="yes">Oui</label>
+                                              <br>
                          <input type="radio" id="no" name="injury" value="no" required>
-
+                         <label for="no">Non</label>
+                                              <br>
                          <label for="injury_details">Autre</label>
                          <input type="text" id="injury_details" name="injury_details" class="injury_details" >
                     </fieldset>
@@ -124,11 +126,11 @@
 
                     <fieldset class="aisance">
                          <legend>Y-a-t'il des exercices que tu ne te sens pas à l'aise de faire?</legend>
-                         <label for="yes">Oui</label>
                          <input type="radio" id="yes" name="aisance" value="yes" required>
-
-                         <label for="no">Non</label>
+                         <label for="yes">Oui</label>
+                                              <br>
                          <input type="radio" id="no" name="aisance" value="no" required>
+                         <label for="no">Non</label>
                     </fieldset>
 
                     <div class="boxdetails">
@@ -151,14 +153,14 @@
                     <fieldset class="activity_level">
                           <legend>Dans une journée typique, tu es quelqu'un qui...</legend>
 
-                          <label for="active" class="lblact" >Se déplace beaucoup (ex: métier physique, + 10 000 pas/jours)</label>
                           <input type="radio" id="active" name="activity_level" value="active" required class="activity_radio">
+                          <label for="active" class="lblact" >Se déplace beaucoup (ex: métier physique, + 10 000 pas/jours)</label>
                          <br>
-                          <label for="moderate" class="lblact">A une activité modérée (ex: 5 000 pas par jours)</label>
                           <input type="radio" id="moderate" name="activity_level" value="moderate" required class="activity_radio">
+                          <label for="moderate" class="lblact">A une activité modérée (ex: 5 000 pas par jours)</label>
                          <br>
-                          <label for="sedentary" class="lblact">Est plutôt sédentaire (ex: télétravail, travail de bureau, études, etc.)</label>
                           <input type="radio" id="sedentary" name="activity_level" value="sedentary" required class="activity_radio">
+                          <label for="sedentary" class="lblact">Est plutôt sédentaire (ex: télétravail, travail de bureau, études, etc.)</label>
                          <br>
                           <label for="activity_level_details" class="lblact">Autre</label>
                           <input type="text" id="activity_level_details" name="activity_level_details" class="activity_details">
@@ -181,22 +183,21 @@
                     abandonner !</span>
                </p>
                <div class="boxcommitment">
-               <fieldset>
-                    <legend>
-                         Maintenant que tu connais tous les détails, es-tu toujours 
-                         prêt(e) à relever le défi ? 💪🔥
-                    </legend>
+                    <fieldset>
+                         <legend>
+                              Maintenant que tu connais tous les détails, es-tu toujours 
+                              prêt(e) à relever le défi ? 💪🔥
+                         </legend>
 
-                    <label for="yes">Oui</label>
-                    <input type="radio" id="yes" name="commitment" value="yes"> <br>
-
-                    <label for="no">Non</label>
-                    <input type="radio" id="no" name="commitment" value="no"> <br>
-
-                    <label for="commitment_details">Avec de l'aide et de la motivation oui bien sûr!</label>
-                    <input type="radio" id="commitment_details" name="commitment_details" class="commitment_details" > <br>
-
-               </fieldset>
+                         <input type="radio" id="yes" name="commitment" value="yes"> 
+                         <label for="yes">Oui</label>
+                                        <br>
+                         <input type="radio" id="no" name="commitment" value="no"> 
+                         <label for="no">Non</label>
+                         <br>
+                         <input type="radio" id="commitment_details" name="commitment_details" class="commitment_details" > 
+                         <label for="commitment_details">Avec de l'aide et de la motivation oui bien sûr!</label>
+                    </fieldset>
                </div>
           </div>
                
@@ -205,18 +206,18 @@
                <fieldset>
                     <legend>Comment es-tu tombé sur mes services de coaching?</legend>
 
-                    <label for="instagram">Réseaux Sociaux</label>
                     <input type="radio" id="instagram" name="source" value="instagram">
-
-                    <label for="google">Site internet</label>
+                    <label for="instagram">Réseaux Sociaux</label>
+                                    <br>
                     <input type="radio" id="google" name="source" value="google">
-
-                    <label for="word_of_mouth">Bouche à oreille</label>
+                    <label for="google">Site internet</label>
+                                    <br>
                     <input type="radio" id="word_of_mouth" name="source" value="word_of_mouth">
-
-                    <label for="advertisement">Publicité</label>
+                    <label for="word_of_mouth">Bouche à oreille</label>
+                                    <br>
                     <input type="radio" id="advertisement" name="source" value="advertisement">
-
+                    <label for="advertisement">Publicité</label>
+                                    <br>
                     <label for="other">Autre</label>
                     <input type="text" id="other" name="source" class="sourcedet" >
                </fieldset>

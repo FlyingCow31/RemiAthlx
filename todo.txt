@@ -18,5 +18,10 @@ To DO:
 - [x] Responsive design
 - [x] Responsive design tablette + PC seulement sur form
 - [x] Fix form 
-- [ ] Put radios before text
-- [ ] Animations
+- [x] Put radios before text
+- [x] Animations
+- [x] make a page after clicking the "submit" button
+
+JS: 
+- [ ] Make the form button redirect or embed the thanks page 
+- [ ] Make the form button send an email with the content 

@@ -20,18 +20,18 @@
                <div class="infosperso">
                     
                     <div class="boxname">
-                         <label for="name" class="namelab">Nom</label>
+                         <label for="name" class="infolab">Nom</label>
                          <input type="text" id="name" name="name" required class="name">
                     </div>
 
                     <div class="boxsurname">
-                         <label for="surname" class="surlab">Prénom</label>
+                         <label for="surname" class="infolab">Prénom</label>
                          <input type="text" id="surname" name="surname" required class="surname">
                     </div> 
                
                
                     <div class="boxage">
-                          <label for="age" class="agelab">Âge </label>
+                          <label for="age" class="infolab">Âge </label>
                            <textarea class="age" id="age" name="age" required
                           placeholder="(mineurs autorisés avec accord des tuteurs légaux)"
                           rows="2" cols="61"></textarea>
@@ -39,12 +39,12 @@
                     
 
                     <div class="boxphone">
-                         <label class="phonlab" for="tel">Tél.</label>
+                         <label for="tel" class="infolab" >Tél.</label>
                          <input placeholder="+33 6 72 72 72 72" class="phone" type="text" id="tel" name="tel" required>
                     </div>
 
                     <div class="boxemail">
-                          <label class="emaillab" for="email">Email</label>
+                          <label for="email" class="infolab" >Email</label>
                           <input placeholder="remi.athlx@gmail.com" class="email" type="email" id="email" name="email" required>
                     </div>
                     
@@ -77,7 +77,7 @@
                     </fieldset>
 
                     <div class="boxgoal">
-                         <label for="goal">Ton objectif?</label>
+                         <label for="goal" class="goallab" >Ton objectif?</label>
                          <input type="text" id="goal" name="goal" class="goal" required placeholder="Un physique à atteindre, une course, une performance à réaliser, un point à améliorer?">
                     </div>
 
@@ -234,7 +234,8 @@
 
                <div class="boxretours">
                <label for="message" class="messlab" >Tu as fini ton questionnaire ! Des retours à faire? N'hésite pas 👍</label>
-               <textarea id="message" name="message" rows="1" cols="50" class="retours" ></textarea>
+               <input id="message" name="message" class="retours" ></input>
+               </div>
           </div>
 
           </div>

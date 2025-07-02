@@ -1,4 +1,4 @@
-@media screen and (max-width: 1023px) and (min-width: 710px) {
+@media screen and (max-width: 2560px) and (min-width: 710px) {
 
      body {
           background-color: rgb(4, 4, 4);
@@ -65,23 +65,27 @@ text-align: center;
      .infosperso {
           display: flex;
           flex-wrap: wrap;
-          margin-right: 40px;
-          margin-left: 0px;
+     }
+     .infolab {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
           text-align: center;
      }
-
      .boxname,
      .boxsurname {
-          flex: 1 1 50%;
+          flex: 1 1 100%;
      }
 
      .name {
           border: #ffffff 1px solid;
           border-radius: 10px;
-          margin-left: 10px;
           margin-top: 10px;
           padding: 10px;
           width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .surname {
@@ -91,11 +95,14 @@ text-align: center;
           margin-top: 10px;
           padding: 10px;
           width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .boxage,
      .boxphone {
-          flex: 1 1 50%;
+          flex: 1 1 100%;
           margin-top: 10px;
      }
 
@@ -104,19 +111,23 @@ text-align: center;
           background-color: rgb(4, 4, 4);
           border-radius: 10px;
           margin-top: 10px;
-          margin-left: 10px;
           padding: 10px;
           color: #ffffff;
           width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .phone {
           border: #ffffff 1px solid;
           border-radius: 10px;
           padding: 10px;
-          margin-left: 10px;
           margin-top: 10px;
           width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .boxemail {
@@ -129,9 +140,10 @@ text-align: center;
           border-radius: 10px;
           padding: 9px;
           margin-top: 10px;
-          margin-left: 0px;
-          margin-right: 50px;
           width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .boxsports {
@@ -144,16 +156,18 @@ text-align: center;
           border-radius: 10px;
           padding: 10px;
           margin-top: 10px;
-          margin-left: 25px;
           width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .sportlab {
           color: rgb(179, 179, 17);
-          margin-left: 10px;
           display: block;
-          /* Add this line to make all lines move */
-          /* Or use: white-space: pre-line; if you want to preserve line breaks */
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
      /* * Formulaire d'infos sur la musculation */
@@ -161,16 +175,17 @@ text-align: center;
      .infomuscu {
           display: flex;
           flex-wrap: wrap;
-          margin-right: 40px;
-          text-align: center;
      }
 
      .lvlmusc {
-          flex: 1 1 100%;
           border: #ffffff 1px solid;
           border-radius: 10px;
           margin-bottom: 10px;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 700px;
+          text-align: center;
      }
 
      .lvlmusc label {
@@ -187,16 +202,27 @@ text-align: center;
           margin-top: 10px;
           width: 700px;
           margin-bottom: 10px;
-          margin-left: 20px;
           padding: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+     }
+     .goallab {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
      .sessions {
-          flex: 1 1 100%;
           border: #ffffff 1px solid;
           border-radius: 10px;
           margin-bottom: 10px;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 700px;
+          text-align: center;
      }
 
      .sessions label {
@@ -209,7 +235,9 @@ text-align: center;
 
      .tpsseance2 {
           display: block;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
      .tpsseance {
@@ -218,17 +246,22 @@ text-align: center;
           margin-top: 10px;
           width: 700px;
           margin-bottom: 10px;
-          margin-left: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
           padding: 10px;
      }
 
 
      .injury {
-          flex: 1 1 100%;
           border: #ffffff 1px solid;
           border-radius: 10px;
           margin-bottom: 20px;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 700px;
+          text-align: center;
      }
 
      .injury label {
@@ -239,6 +272,8 @@ text-align: center;
           border: #ffffff 1px solid;
           border-radius: 10px;
           padding: 5px;
+          
+          
      }
 
      .boxmouvs {
@@ -253,28 +288,37 @@ text-align: center;
           height: 40px;
           padding: 10px;
           margin-bottom: 10px;
-          margin-left: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .mouvdet {
           display: block;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
 
      .aisance {
-          flex: 1 1 100%;
           border: #ffffff 1px solid;
           border-radius: 10px;
           width: 350px;
           padding: 10px;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 700px;
+          text-align: center;
           margin-bottom: 10px;
      }
 
      .aisance_details2 {
           display: block;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
      .aisance label {
@@ -293,7 +337,9 @@ text-align: center;
           height: 40px;
           padding: 10px;
           margin-bottom: 10px;
-          margin-left: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      /* * Formulaire de nutrition/info */
@@ -308,7 +354,6 @@ text-align: center;
      }
 
      .allergies {
-
           border: #ffffff 1px solid;
           border-radius: 10px;
           margin-top: 10px;
@@ -316,13 +361,16 @@ text-align: center;
           padding: 10px;
           height: 40px;
           margin-bottom: 10px;
-          margin-left: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .allergieslab {
           display: block;
-          margin-left: 60px;
-
+          width: fit-content;
+          margin-left: auto;
+          margin-right: auto;
      }
 
      .boxactivity {
@@ -339,7 +387,10 @@ text-align: center;
           border-radius: 10px;
           margin-top: 10px;
           margin-bottom: 10px;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 700px;
      }
 
      .activity_details {
@@ -359,12 +410,16 @@ text-align: center;
           width: 700px;
           padding: 10px;
           margin-bottom: 10px;
-          margin-left: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .mensulab {
           display: block;
-          margin-left: 160px;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
      .mensurations label {
@@ -375,7 +430,9 @@ text-align: center;
           color: rgb(179, 179, 17);
           font-size: 1.5em;
           display: block;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 700px;
 
      }
 
@@ -392,7 +449,9 @@ text-align: center;
      }
 
      .boxcommitment fieldset {
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 700px;
      }
 
      .boxcommitment label {
@@ -418,7 +477,9 @@ text-align: center;
      }
 
      .boxservice fieldset {
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 700px;
      }
 
      .boxservice label {
@@ -437,12 +498,16 @@ text-align: center;
           width: 700px;
           padding: 10px;
           margin-bottom: 10px;
-          margin-left: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
      }
 
      .entretienlab {
           display: block;
-          margin-left: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
      .boxretours {
@@ -453,19 +518,24 @@ text-align: center;
           background-color: rgb(4, 4, 4);
           border: #ffffff 1px solid;
           color: whitesmoke;
-          font: 1em sans-serif;
+          font-size: 1em;
+          font-family: sans-serif;
           border-radius: 10px;
           margin-top: 10px;
           width: 700px;
           height: 40px;
           padding: 10px;
           margin-bottom: 10px;
-          margin-left: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block; 
      }
 
      .messlab {
           display: block;
-          margin-left: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
      .submitbutton {
@@ -474,7 +544,9 @@ text-align: center;
           color: rgb(179, 179, 17);
           border: #ffffff 1px solid;
           border-radius: 7px;
-          margin-left: 200px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
           margin-top: 20px;
      }
 

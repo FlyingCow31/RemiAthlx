@@ -1,5 +1,5 @@
 @media screen and (max-width: 390px) {
-     /* ! I just disabled the design in the main file */ 
+
      body {
                background-color: rgb(4, 4, 4);
                color: #ffffff;
@@ -909,16 +909,18 @@
           font: 1em sans-serif;
           border-radius: 10px;
           margin-top: 10px;
-          width: 350px;
           height: 40px;
           padding: 10px;
           margin-bottom: 10px;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
      }
 
      .messlab {
           display: block;
-          margin-left: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
      .submitbutton {
@@ -927,9 +929,10 @@
           color: rgb(179, 179, 17);
           border: #ffffff 1px solid;
           border-radius: 7px;
-          margin-left: 10px;
-          margin-right: 10px;
           margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
      }
 
 }

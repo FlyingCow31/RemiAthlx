@@ -1,51 +1,90 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-     $to = "gael.tournier32@gmail.com";
-     $subject = "Test";
-     
-     
-     $name = htmlspecialchars($_POST["name"]);
-     $surname = htmlspecialchars($_POST["surname"]);
-     $age = htmlspecialchars($_POST["age"]);
-     $phone = htmlspecialchars($_POST["phone"]);
-     $email = htmlspecialchars($_POST["email"]);
-     $sports = htmlspecialchars($_POST["sports"]);
-     $level = htmlspecialchars($_POST["level"]);
-     $goal = htmlspecialchars($_POST["goal"]);
-     $sessions = htmlspecialchars($_POST["sessions"]);
-     $tpsseance = htmlspecialchars($_POST["tpsseance"]);
-     $injury = htmlspecialchars($_POST["injury"]);
-     $injury_details = htmlspecialchars($_POST["injury_details"]);
-     $mouvements = htmlspecialchars($_POST["mouvements"]);
-     $aisance = htmlspecialchars($_POST["aisance"]);
-     $aisance_details = htmlspecialchars($_POST["aisance_details"]);
-     $allergies = htmlspecialchars($_POST["allergies"]);
-     $activity_level = htmlspecialchars($_POST["activity_level"]);
-     $activity_level_details = htmlspecialchars($_POST["activity_level_details"]);
-     $mensurations = htmlspecialchars($_POST["mensurations"]);
-     $commit = htmlspecialchars($_POST["commit"]);
-     $source = htmlspecialchars($_POST["source"]);
-     $entretien = htmlspecialchars($_POST["entretien"]);
-     $message = htmlspecialchars($_POST["message"]);
+require __DIR__ . '/src/PHPMailer.php';
+require __DIR__ . '/src/SMTP.php';
+require __DIR__ . '/src/Exception.php';
 
-     $headers ="From: $name, $surname, $email.\r\n";
-     
-     $body = "Prénom: $name\nNom: $surname\nÂge: $age\nNuméro de téléphone: $phone\nEmail: $email\nSports 
-     pratiqués: $sports\nNiveau en musculation: $level\nObjectif: $goal\nSéances par semaines: $sessions\n
-     Temps consacré à chaque séances: $tpsseance\nBlessé/déja été blessé: $injury\nDétails: $injury_details\n
-     Mouvements qui posent problèmes: $mouvements\nExercices pas sentis de faire: $aisance\nDétails: 
-     $aisance_details\nAllergies: $allergies\nActivité: $activity_level\nDétails: $activity_level_details\n
-     Mensurations: $mensurations\nPrêt à relever le défi: $commit\nComment est-tu tombé sur mon service de coaching? $source\n
-     \n\n\nEntretien téléphonique: $entretien\n\nMessage et retours: $message";
-     if (mail($to,$subject,$body,$headers)) {
-          echo "Message Sent successfully!";
-     } else {
-          echo "Failed to send message.";
-     }
-     file_put_contents('debug.log', print_r($_POST, true), FILE_APPEND);
+// Sanitize form inputs
+$name = htmlspecialchars($_POST["name"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$surname = htmlspecialchars($_POST["surname"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$age = htmlspecialchars($_POST["age"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$phone = htmlspecialchars($_POST["phone"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$email = htmlspecialchars($_POST["email"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$sports = htmlspecialchars($_POST["sports"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$level = htmlspecialchars($_POST["level"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$goal = htmlspecialchars($_POST["goal"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$sessions = htmlspecialchars($_POST["sessions"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$tpsseance = htmlspecialchars($_POST["tpsseance"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$injury = htmlspecialchars($_POST["injury"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$injury_details = htmlspecialchars($_POST["injury_details"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$mouvements = htmlspecialchars($_POST["mouvements"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$aisance = htmlspecialchars($_POST["aisance"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$aisance_details = htmlspecialchars($_POST["aisance_details"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$allergies = htmlspecialchars($_POST["allergies"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$activity_level = htmlspecialchars($_POST["activity_level"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$activity_level_details = htmlspecialchars($_POST["activity_level_details"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$mensurations = htmlspecialchars($_POST["mensurations"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$commitment = htmlspecialchars($_POST["commitment"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$commitment_details = htmlspecialchars($_POST["commitment_details"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$source = htmlspecialchars($_POST["source"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$entretien = htmlspecialchars($_POST["entretien"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$message = htmlspecialchars($_POST["message"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+
+// Format email body
+$body = <<<EOD
+Prénom: $name
+Nom: $surname
+Âge: $age
+Numéro de téléphone: $phone
+Email: $email
+Sports pratiqués: $sports
+Niveau en musculation: $level
+Objectif: $goal
+Séances par semaines: $sessions
+Temps consacré à chaque séance: $tpsseance
+Blessé/déjà été blessé: $injury
+Détails: $injury_details
+Mouvements qui posent problèmes: $mouvements
+Exercices pas sentis de faire: $aisance
+Détails: $aisance_details
+Allergies: $allergies
+Activité: $activity_level
+Détails: $activity_level_details
+Mensurations: $mensurations
+Prêt à relever le défi: $commitment
+Comment es-tu tombé sur mon service de coaching?: $source
+
+Entretien téléphonique: $entretien
+
+Message et retours: $message
+EOD;
+
+try {
+    $mail = new PHPMailer(true);
+
+    // Server settings
+    $mail->isSMTP();
+    $mail->Host = 'mail75.lwspanel.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'remi@remiathlx.fr'; // replace with your email
+    $mail->Password = 'RemiApanyan123@';   // replace with your password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port = 465;
+
+    // Recipients
+    $mail->setFrom('remi@remiathlx.fr', 'remi');
+    $mail->addAddress('remi.athlx@gmail.com');
+
+    // Content
+    $mail->isHTML(false);
+    $mail->Subject = 'Nouvelle demande de coaching';
+    $mail->Body    = $body;
+
+    $mail->send();
+    echo 'Message envoyé avec succès !';
+} catch (Exception $e) {
+    echo "Erreur lors de l'envoi : {$mail->ErrorInfo}";
 }
-
 ?>

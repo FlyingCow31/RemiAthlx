@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/src/PHPMailer.php';
-require __DIR__ . '/src/SMTP.php';
-require __DIR__ . '/src/Exception.php';
+require __DIR__ . '..';
+require __DIR__ . '..';
+require __DIR__ . '..';
 
 // Sanitize form inputs
 $name = htmlspecialchars($_POST["name"] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
@@ -66,12 +66,12 @@ try {
 
     // Server settings
     $mail->isSMTP();
-    $mail->Host = 'mail75.lwspanel.com';
+    $mail->Host = '...';
     $mail->SMTPAuth = true;
-    $mail->Username = 'remi@remiathlx.fr'; // replace with your email
-    $mail->Password = 'RemiApanyan123@';   // replace with your password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $mail->Port = 465;
+    $mail->Username = '...';
+    $mail->Password = '....';   
+    $mail->SMTPSecure = ...;
+    $mail->Port = ...;
 
     // Recipients
     $mail->setFrom('remi@remiathlx.fr', 'remi');
